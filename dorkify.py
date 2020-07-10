@@ -32,7 +32,7 @@ args = vars(parser.parse_args())
 def url_menu():
     global ch2
     # mods.clear_screen()
-    print('''
+    print(f'''
 CHOOSE OPTION :
 
     {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find specific terms in website titles  [1]
@@ -48,7 +48,7 @@ CHOOSE OPTION :
 def information_menu():
     global ch5
     # mods.clear_screen()
-    print('''
+    print(f'''
 CHOOSE OPTION :
 
     {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Definition  [1]
