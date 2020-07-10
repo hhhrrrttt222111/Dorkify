@@ -7,6 +7,7 @@ import argparse
 
 import core.search_url as search_url
 import core.logo as logo
+import core.colors as colors
 
 
 parser = argparse.ArgumentParser()
@@ -34,9 +35,9 @@ def url_menu():
     print('''
 CHOOSE OPTION :
 
-    [~] Find specific terms in website titles  [1]
-    [~] Find specific terms in website URL's   [2]
-    [~] Find Website                           [3]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find specific terms in website titles  [1]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find specific terms in website URL's   [2]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find Website                           [3]
 
     ''')
 
@@ -50,11 +51,11 @@ def information_menu():
     print('''
 CHOOSE OPTION :
 
-    [~] Definition  [1]
-    [~] Information [2]
-    [~] Stocks      [3]
-    [~] Maps        [4]
-    [~] Weather     [5]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Definition  [1]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Information [2]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Stocks      [3]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Maps        [4]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Weather     [5]
 
     ''')
 
@@ -65,16 +66,16 @@ CHOOSE OPTION :
 def hacking_menu():
     global ch6
     # mods.clear_screen()
-    print('''
+    print(f'''
 CHOOSE OPTION :
 
-    [~] Find WordPress sites with wp-content exposed               [1]  
-    [~] Find WordPress websites that are running the Wordfence WAF [2]    
-    [~] Find Usernames and Passwords                               [3]    
-    [~] Find vulnerable CCTV cameras                               [4]   
-    [~] Find vulnerable Web Servers                                [5] 
-    [~] Search for Log files                                       [6] 
-    [~] Find open FTP Servers                                      [7] 
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find WordPress sites with wp-content exposed               [1]  
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find WordPress websites that are running the Wordfence WAF [2]    
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find Usernames and Passwords                               [3]    
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find vulnerable CCTV cameras                               [4]   
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find vulnerable Web Servers                                [5] 
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Search for Log files                                       [6] 
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find open FTP Servers                                      [7] 
 
 
     ''')
@@ -84,15 +85,15 @@ CHOOSE OPTION :
 
 def dorkify_menu():
     global ch
-    print('''
+    print(f'''
 CHOOSE OPTION :
 
-    [~] Google Search   [1]
-    [~] URL Search      [2]
-    [~] Books           [3]
-    [~] Music Downloads [4]
-    [~] Information     [5]
-    [~] Dork Hacks!     [6]    
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Google Search   [1]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} URL Search      [2]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Books           [3]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Music Downloads [4]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Information     [5]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Dork Hacks!     [6]    
     ''')
 
     ch = int(input("    --> "))
