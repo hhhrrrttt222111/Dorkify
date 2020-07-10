@@ -2,7 +2,7 @@ import sys
 import os
 import argparse
 
-from core import search_url, mods, logo
+from core import search_url, mods, logo, colors
 
 
 parser = argparse.ArgumentParser()

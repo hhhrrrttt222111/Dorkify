@@ -1,9 +1,9 @@
-
+from core import colors
 
 
 
 def dorkify_logo():
-    print('''
+    print(colors.bcolors.WARNING + '''
     
 ▓█████▄     ▒█████      ██▀███      ██ ▄█▀    ██▓     █████▒   ▓██   ██▓
 ▒██▀ ██▌   ▒██▒  ██▒   ▓██ ▒ ██▒    ██▄█▒    ▓██▒   ▓██   ▒     ▒██  ██▒
@@ -19,6 +19,8 @@ def dorkify_logo():
                                                 ♥ v 1.01 ♥
                             Created by : THE NECROMANCER
                             https://github.com/hhhrrrttt222111
+                            
+    Welcome to Dorkify. 
     
     ''')
 
