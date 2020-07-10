@@ -230,7 +230,7 @@ if args['cli']:
 
 
     else:
-        print('INVALID OPTION : ')
+        print('INVALID OPTION! \n EXITING ')
         sys.exit()
 
 

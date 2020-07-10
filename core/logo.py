@@ -17,8 +17,10 @@ def dorkify_logo():
  ░ ░  ░    ░ ░ ░ ▒       ░░   ░    ░ ░░ ░     ▒ ░    ░ ░        ▒ ▒ ░░  
    ░           ░ ░        ░        ░  ░       ░                 ░ ░     
  ░                                                              ░ ░     
+ ''' + colors.ENDC)
+    print(f'''
 
-                                                ♥ v 1.01 ♥
+                                                {colors.RED}♥{colors.ENDC} v 1.01 {colors.RED}♥{colors.ENDC}
                             Created by : THE NECROMANCER
                             https://github.com/hhhrrrttt222111
                             
