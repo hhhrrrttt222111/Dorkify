@@ -1,0 +1,90 @@
+Metadata-Version: 1.1
+Name: google-search
+Version: 1.0.2
+Summary: Library for scraping google search results
+Home-page: https://github.com/anthonyhseb/googlesearch
+Author: Anthony Hseb
+Author-email: anthony.hseb@hotmail.com
+License: MIT license
+Description: =============
+        google-search
+        =============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/google-search.svg
+                :target: https://pypi.python.org/pypi/google-search
+        
+        .. image:: https://img.shields.io/travis/anthonyhseb/googlesearch.svg
+                :target: https://travis-ci.org/anthonyhseb/googlesearch
+        
+        .. image:: https://readthedocs.org/projects/googlesearch/badge/?version=latest
+                :target: https://googlesearch.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/anthonyhseb/googlesearch/shield.svg
+             :target: https://pyup.io/repos/github/anthonyhseb/googlesearch/
+             :alt: Updates
+        
+        
+        Library for scraping google search results.
+        
+        * Usage::
+        
+            from googlesearch.googlesearch import GoogleSearch
+            response = GoogleSearch().search("something")
+            for result in response.results:
+                print("Title: " + result.title)
+                print("Content: " + result.getText())
+        
+        
+        
+        * Free software: MIT license
+        
+        Features
+        --------
+        
+        Run a Google search and fetch the individual results (full HTML and text contents). By default the result URLs are fetched eagerly when the search request is made with 10 parallel requests. Fetching can be deferred until ``searchResult.getText()`` or ``getMarkup()`` are called by passing ``prefetch_results = False`` to the search method.
+        
+        Pass ``num_results`` to the search method to set the maximum number of results. 
+        
+        ``SearchReponse.total`` gives the total number of results on Google.
+        
+        Credits
+        ---------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        
+        =======
+        History
+        =======
+        
+        1.0.0 (2017-05-06)
+        ------------------
+        
+        * First release on PyPI.
+        
+        
+        1.0.1 (2017-05-08)
+        ------------------
+        
+        * Minor corrections in documentation
+        
+        1.0.2 (2017-05-12)
+        ------------------
+        
+        * Fixed duplicate result issue
+        * Added language parameter
+        
+Keywords: googlesearch
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
