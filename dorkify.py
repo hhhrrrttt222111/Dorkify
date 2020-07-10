@@ -1,8 +1,12 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 import sys
 import os
 import argparse
 
-from core import search_url, mods, logo, colors
+import core.search_url as search_url
+import core.logo as logo
 
 
 parser = argparse.ArgumentParser()

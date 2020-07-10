@@ -1,4 +1,6 @@
-from core import colors
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import core.colors as colors
 
 
 
