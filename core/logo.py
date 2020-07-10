@@ -25,6 +25,7 @@ def dorkify_logo():
                             {colors.bcolors.OKBLUE}https://github.com/hhhrrrttt222111{colors.bcolors.ENDC}
                             
     {colors.bcolors.BOLD}Welcome to Dorkify{colors.bcolors.ENDC}
+
     {colors.bcolors.NOTICE}This tool is for educational purposes and the creator is not responsible for any 
                             actions performed by the users.{colors.bcolors.ENDC}
     
