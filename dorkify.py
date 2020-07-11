@@ -14,7 +14,7 @@ import core.mods as mods
 parser = argparse.ArgumentParser()
 ap = parser.add_mutually_exclusive_group()
 ap.add_argument('--cli', help='Run the Command Line version of Dorkify', action='store_true')
-ap.add_argument('-v', '--version', help='Version', action="version", version='1.01')
+ap.add_argument('-v', '--version', help='Version', action="version", version='1.02')
 ap.add_argument('-s', '--search', type=str, help='Do a Google search')
 ap.add_argument('-b', '--book', type=str, help='Search for a book or author')
 ap.add_argument('-mu', '--music', type=str, help='Search for songs or artists')

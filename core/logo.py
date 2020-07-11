@@ -21,7 +21,7 @@ def dorkify_logo():
  ''' + colors.bcolors.ENDC)
     print(f'''
 
-                                                {colors.bcolors.RED}♥{colors.bcolors.ENDC} v 1.01 {colors.bcolors.RED}♥{colors.bcolors.ENDC}
+                                                {colors.bcolors.RED}♥{colors.bcolors.ENDC} v 1.02 {colors.bcolors.RED}♥{colors.bcolors.ENDC}
                             Created by : {colors.bcolors.OKGREEN}THE NECROMANCER{colors.bcolors.ENDC}
                             {colors.bcolors.OKBLUE}https://github.com/hhhrrrttt222111{colors.bcolors.ENDC}
                             
