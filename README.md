@@ -1,6 +1,5 @@
 <p align=center>
 
- 
   <img src="https://raw.githubusercontent.com/hhhrrrttt222111/Dorkify/master/media/dorkify.png" style="border-radius:10px;"/>
 
   <br>
@@ -13,7 +12,7 @@
 </p>
 
 
-### MENU
+### MENU  :page_with_curl:
 
 * Google Search
 * URL Search
@@ -24,7 +23,7 @@
 
 
 ## INSTALLATION
-**Python 3.6 or higher is required**
+**Python 3.6 or higher is required**  :snake:
 
 ```bash
 git clone https://github.com/hhhrrrttt222111/Dorkify.git
@@ -66,3 +65,7 @@ optional arguments:
   --inurl INURL         Search for a keywords in website URL
   --site SITE           Search for a Site
 ```
+
+<br>
+## Google Dorking
+Google dorking is a hacker technique that uses Google Search to find security holes in the configuration and computer code that websites use. Google Doring involves using advanced operators in the Google search engine to locate specific strings of text within search results such as finding specific versions of vulnerable Web applications. Users can utilize commands to get other specific search results.
