@@ -6,6 +6,7 @@ import core.mods as mods
 
 
 def dorkify_logo():
+    mods.clear_screen()
     print(colors.bcolors.WARNING + '''
     
 ▓█████▄     ▒█████      ██▀███      ██ ▄█▀    ██▓     █████▒   ▓██   ██▓
