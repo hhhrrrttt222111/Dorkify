@@ -103,6 +103,8 @@ CHOOSE OPTION :
 
 def dorkify_menu():
     global ch
+    mods.clear_screen()
+    logo.dorkify_logo()
     print(f'''
 CHOOSE OPTION :
 
