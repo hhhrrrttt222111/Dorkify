@@ -51,9 +51,9 @@ def url_menu():
     print(f'''
 CHOOSE OPTION :
 
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find specific terms in website titles  [1]
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find specific terms in website URL's   [2]
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find Website                           [3]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find with specific terms in website titles  [1]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find with specific terms in website URL's   [2]
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find Website                                [3]
 
     ''')
 
