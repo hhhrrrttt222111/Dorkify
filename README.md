@@ -1,11 +1,12 @@
 <p align=center>
 
  
-  <img src=""/>
+  <img src="https://raw.githubusercontent.com/hhhrrrttt222111/Dorkify/master/media/dorkify.png"/>
 
   <br>
   <span>Perform Google Dork search with <b><i>Dorkify</i></b></span>
   <br><br>
+    <a href="https://github.com/hhhrrrttt222111/Dorkify/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/hhhrrrttt222111/Dorkify"></a>
   <a href="https://github.com/hhhrrrttt222111/Dorkify/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/hhhrrrttt222111/Dorkify?color=orange"></a>
   <a href="https://github.com/hhhrrrttt222111/Dorkify/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/hhhrrrttt222111/Dorkify?color=red"></a>
   <a target="_blank" href="https://www.python.org/downloads/" title="Python version"><img src="https://img.shields.io/badge/python-%3E=_3.7-blue.svg"></a>
