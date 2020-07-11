@@ -32,8 +32,8 @@ def url_search(q):
 
         dorks = dict(zip(links, titles))
         for key, value in dorks.items():
-            print(f'[*]  {key}  -  {colors.bcolors.RED}{value}{colors.bcolors.ENDC}')
+            print(f'{colors.bcolors.LOGGING}[*]{colors.bcolors.ENDC}  {key}  -  {colors.bcolors.HEADER}{value}{colors.bcolors.ENDC}')
 
         if len(dorks) == 0:
-            print('Ooops...No results found')
+            print(f'{colors.bcolors.BOLD}Ooops...No results found{colors.bcolors.ENDC}')
 

@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import core.colors as colors
+import core.mods as mods
 
 
 
@@ -26,7 +27,7 @@ def dorkify_logo():
                             
     {colors.bcolors.BOLD}Welcome to Dorkify{colors.bcolors.ENDC}
 
-    {colors.bcolors.NOTICE}This tool is for educational purposes and the creator is not responsible for any 
+    {colors.bcolors.NOTICE}This tool is for educational purposes only and the creator is not responsible for any 
                             actions performed by the users.{colors.bcolors.ENDC}
     
     ''')

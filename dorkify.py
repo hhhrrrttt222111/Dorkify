@@ -8,6 +8,7 @@ import argparse
 import core.search_url as search_url
 import core.logo as logo
 import core.colors as colors
+import core.mods as mods
 
 
 parser = argparse.ArgumentParser()
@@ -29,9 +30,24 @@ args = vars(parser.parse_args())
 
 
 
+notice = f'''
+    {colors.bcolors.OKBLUE}Please read the following information carefully before using this tool.
+    The content of the this repository is for educational purposes and uses only.
+    Do not use this tool excessively. Google Dorking might be legal but using the 
+    functionality for cyber terrorism, cyber thefts and other malicious activities is illegal.
+    Using this tool is not anonymous and one needs to be aware that Google knows who you are
+    and from where and when you perform these searches.{colors.bcolors.ENDC} 
+    
+    
+    {colors.bcolors.RED}DO YOU AGREE TO TO OUR TERMS AND CONDITIONS ?{colors.bcolors.ENDC}  (Y / N) :  
+    '''
+
+
+
 def url_menu():
     global ch2
-    # mods.clear_screen()
+    mods.clear_screen()
+    logo.dorkify_logo()
     print(f'''
 CHOOSE OPTION :
 
@@ -47,7 +63,8 @@ CHOOSE OPTION :
 
 def information_menu():
     global ch5
-    # mods.clear_screen()
+    mods.clear_screen()
+    logo.dorkify_logo()
     print(f'''
 CHOOSE OPTION :
 
@@ -65,7 +82,8 @@ CHOOSE OPTION :
 
 def hacking_menu():
     global ch6
-    # mods.clear_screen()
+    mods.clear_screen()
+    logo.dorkify_logo()
     print(f'''
 CHOOSE OPTION :
 
@@ -104,7 +122,13 @@ CHOOSE OPTION :
 
 if args['cli']:
     logo.dorkify_logo()
-    dorkify_menu()
+    print(notice)
+    yn = input()
+    if yn == 'y' or yn =='Y':
+        dorkify_menu()
+    else :
+        print('YOU MUST AGREE TO THE TERMS')
+        sys.exit()
 
     if ch == 1:
         q = input('SEARCH : ')
