@@ -5,7 +5,7 @@ import requests
 import urllib
 from bs4 import BeautifulSoup
 
-
+import core.colors as colors
 
 
 def url_search(q):
@@ -32,7 +32,7 @@ def url_search(q):
 
         dorks = dict(zip(links, titles))
         for key, value in dorks.items():
-            print('[*] ' + key, ' - ', value)
+            print(f'[*]  {key}  -  {colors.bcolors.RED}{value}{colors.bcolors.ENDC}')
 
         if len(dorks) == 0:
             print('Ooops...No results found')
