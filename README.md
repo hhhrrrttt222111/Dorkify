@@ -12,6 +12,14 @@
 </p>
 
 
+<br>
+
+## Google Dorking
+
+Google dorking is a hacker technique that uses Google Search to find security holes in the configuration and computer code that websites use. Google Doring involves using advanced operators in the Google search engine to locate specific strings of text within search results such as finding specific versions of vulnerable Web applications. Users can utilize commands to get other specific search results.
+
+<br>
+
 ### MENU  :page_with_curl:
 
 * Google Search
@@ -21,6 +29,22 @@
 * Information
 * Dork Hacks!
 
+## Features
+  Dorkify can :
+  - Perfom a (Google/URL) search
+  - Find specific link with keywords in URL/Title/Website
+  - Search for Books
+  - Extract mp3/mp4 download links
+  - Perform deep scan on definitions and informations
+  - Get details on Stocks/Maos/Weather
+  - Find vulnerable Wordpress sites
+  - Search for Usernames and Password list
+  - Find vulnerable Web servers
+  - Find vulnerable CCTV's
+  - Find open FTP Servers
+  - Find open FTP Servers
+
+#### More features with stronger results will come out in v 2.01
 
 ## INSTALLATION
 **Python 3.6 or higher is required**  :snake:
@@ -66,6 +90,16 @@ optional arguments:
   --site SITE           Search for a Site
 ```
 
+### Run Dorkify
+```bash
+python3 dorkify.py --cli
+```
+
 <br>
-## Google Dorking
-Google dorking is a hacker technique that uses Google Search to find security holes in the configuration and computer code that websites use. Google Doring involves using advanced operators in the Google search engine to locate specific strings of text within search results such as finding specific versions of vulnerable Web applications. Users can utilize commands to get other specific search results.
+
+## License  :heavy_check_mark:
+
+[MIT Licence](https://github.com/hhhrrrttt222111/Dorkify/blob/master/LICENSE)
+
+
+
