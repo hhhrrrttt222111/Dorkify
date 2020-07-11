@@ -1,7 +1,7 @@
 <p align=center>
 
  
-  <img src="https://raw.githubusercontent.com/hhhrrrttt222111/Dorkify/master/media/dorkify.png"/>
+  <img src="https://raw.githubusercontent.com/hhhrrrttt222111/Dorkify/master/media/dorkify.png" style="border-radius:10px;"/>
 
   <br>
   <span>Perform Google Dork search with <b><i>Dorkify</i></b></span>
@@ -27,9 +27,9 @@
 **Python 3.6 or higher is required**
 
 ```bash
-git clone https://github.com/sherlock-project/sherlock.git
+git clone https://github.com/hhhrrrttt222111/Dorkify.git
 
-cd sherlock
+cd Dorkify
 
 python3 -m pip install -r requirements.txt
 ```
