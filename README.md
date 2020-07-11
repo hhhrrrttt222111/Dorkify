@@ -36,7 +36,7 @@ Google dorking is a hacker technique that uses Google Search to find security ho
   - Search for Books
   - Extract mp3/mp4 download links
   - Perform deep scan on definitions and informations
-  - Get details on Stocks/Maos/Weather
+  - Get details on Stocks/Maps/Weather
   - Find vulnerable Wordpress sites
   - Search for Usernames and Password list
   - Find vulnerable Web servers
