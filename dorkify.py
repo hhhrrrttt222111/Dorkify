@@ -22,7 +22,7 @@ ap.add_argument('--wp', help='WordPress sites vulnerabilities', action='store_tr
 ap.add_argument('--up', help='Find vulnerable Usernames and Passwords', action='store_true')
 ap.add_argument('--cam', help='Find vulnerable CCTV cameras', action='store_true')
 ap.add_argument('--ftp', help='Find open FTP Servers', action='store_true')
-ap.add_argument('-v', '--version', help='Version', action="version", version='1.02')
+ap.add_argument('-v', '--version', help='Version', action="version", version='2.01')
 ap.add_argument('-s', '--search', type=str, help='Do a Google search')
 ap.add_argument('-b', '--book', type=str, help='Search for a book or author')
 ap.add_argument('-mu', '--music', type=str, help='Search for songs or artists')
