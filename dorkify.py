@@ -2,18 +2,26 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import os
 import argparse
 
 import core.search_url as search_url
 import core.logo as logo
 import core.colors as colors
 import core.mods as mods
+import Modules.wordpress as wp
+import Modules.information as info
+import Modules.userpass as up
+import Modules.cameras as cam
+import Modules.ftp as ftp
 
 
 parser = argparse.ArgumentParser()
 ap = parser.add_mutually_exclusive_group()
 ap.add_argument('--cli', help='Run the Command Line version of Dorkify', action='store_true')
+ap.add_argument('--wp', help='WordPress sites vulnerabilities', action='store_true')
+ap.add_argument('--up', help='Find vulnerable Usernames and Passwords', action='store_true')
+ap.add_argument('--cam', help='Find vulnerable CCTV cameras', action='store_true')
+ap.add_argument('--ftp', help='Find open FTP Servers', action='store_true')
 ap.add_argument('-v', '--version', help='Version', action="version", version='1.02')
 ap.add_argument('-s', '--search', type=str, help='Do a Google search')
 ap.add_argument('-b', '--book', type=str, help='Search for a book or author')
@@ -61,25 +69,6 @@ CHOOSE OPTION :
     print('\n\n')
 
 
-def information_menu():
-    global ch5
-    mods.clear_screen()
-    logo.dorkify_logo()
-    print(f'''
-CHOOSE OPTION :
-
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Definition  [1]
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Information [2]
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Stocks      [3]
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Maps        [4]
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Weather     [5]
-
-    ''')
-
-    ch5 = int(input("    --> "))
-    print('\n\n')
-
-
 def hacking_menu():
     global ch6
     mods.clear_screen()
@@ -87,14 +76,13 @@ def hacking_menu():
     print(f'''
 CHOOSE OPTION :
 
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find WordPress sites with wp-content exposed               [1]  
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Wordpress Site Dorks                                       [1]  
     {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find WordPress websites that are running the Wordfence WAF [2]    
-    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find Usernames and Passwords                               [3]    
+    {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find vulnerable Usernames and Passwords                    [3]    
     {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find vulnerable CCTV cameras                               [4]   
     {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find vulnerable Web Servers                                [5] 
     {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Search for Log files                                       [6] 
     {colors.bcolors.OKBLUE}[~]{colors.bcolors.ENDC} Find open FTP Servers                                      [7] 
-
 
     ''')
 
@@ -118,6 +106,56 @@ CHOOSE OPTION :
 
     ch = int(input("    --> "))
     print('\n\n')
+
+
+# WordPress
+
+if args['wp']:
+    logo.dorkify_logo()
+    print(notice)
+    yn = input()
+    if yn == 'y' or yn =='Y':
+        wp.wordpress()
+    else :
+        print('YOU MUST AGREE TO THE TERMS')
+        sys.exit()
+
+# Username & Passwords
+
+if args['up']:
+    logo.dorkify_logo()
+    print(notice)
+    yn = input()
+    if yn == 'y' or yn =='Y':
+        up.userpass()
+    else :
+        print('YOU MUST AGREE TO THE TERMS')
+        sys.exit()
+
+
+# Cameras
+
+if args['cam']:
+    logo.dorkify_logo()
+    print(notice)
+    yn = input()
+    if yn == 'y' or yn =='Y':
+        cam.cameras()
+    else :
+        print('YOU MUST AGREE TO THE TERMS')
+        sys.exit()
+
+# FTP Server
+
+if args['ftp']:
+    logo.dorkify_logo()
+    print(notice)
+    yn = input()
+    if yn == 'y' or yn =='Y':
+        ftp.ftp()
+    else :
+        print('YOU MUST AGREE TO THE TERMS')
+        sys.exit()
 
 
 # Main Program
@@ -177,48 +215,13 @@ if args['cli']:
 
 
     elif ch == 5:
-        information_menu()
-        if ch5 == 1:
-            s = input('SEARCH DEFINITION: ')
-            q = str('define:' + s)
-            print('\nSearching... \n')
-            search_url.url_search(q)
-
-        elif ch5 == 2:
-            s = input('SEARCH : ')
-            q = str('info:' + s)
-            print('\nGathering Info... \n')
-            search_url.url_search(q)
-
-        elif ch5 == 3:
-            s = input('SEARCH COMPANY WITH TICKER CODE: ')
-            q = str('stocks:' + s)
-            print('\nSearching Stocks \n')
-            search_url.url_search(q)
-
-        elif ch5 == 4:
-            s = input('SEARCH CITY: ')
-            q = str('maps:' + s)
-            print('\nFinding Maps \n')
-            search_url.url_search(q)
-
-        elif ch5 == 5:
-            s = input('ENTER CITY NAME: ')
-            q = str('weather:' + s)
-            print('\nChecking Weather \n')
-            search_url.url_search(q)
-
-        else:
-            print('INVALID OPTION  \n TRY AGAIN')
-            sys.exit()
+        info.information()
 
 
     elif ch == 6:
         hacking_menu()
         if ch6 == 1:
-            q = str('"index of" inurl:wp-content/')
-            print('\nSearching... \n')
-            search_url.url_search(q)
+            wp.wordpress()
 
         elif ch6 == 2:
             q = str('filetype:ini “wordfence”')
@@ -226,14 +229,10 @@ if args['cli']:
             search_url.url_search(q)
 
         elif ch6 == 3:
-            q = str('intext: passwords filetype: txt')
-            print('\nSearching... \n')
-            search_url.url_search(q)
+            up.userpass()
 
         elif ch6 == 4:
-            q = str('inurl:”CgiStart?page=”')
-            print('\nSearching... \n')
-            search_url.url_search(q)
+            cam.cameras()
 
         elif ch6 == 5:
             q = str('inurl:/proc/self/cwd')
@@ -246,9 +245,7 @@ if args['cli']:
             search_url.url_search(q)
 
         elif ch6 == 7:
-            q = str('intitle:"index of" inurl:ftp')
-            print('\nSearching... \n')
-            search_url.url_search(q)
+            ftp.ftp()
 
         else:
             print('INVALID OPTION : ')
