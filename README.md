@@ -42,9 +42,9 @@ Google dorking is a hacker technique that uses Google Search to find security ho
   - Find vulnerable Web servers
   - Find vulnerable CCTV's
   - Find open FTP Servers
-  - Find open FTP Servers
 
-#### More features with stronger results will come out in v 2.01
+
+#### More features with stronger results will come out in v 2.21
 
 ## INSTALLATION
 **Python 3.6 or higher is required**  :snake:
@@ -62,15 +62,20 @@ python3 -m pip install -r requirements.txt
 ```bash
 python3 dorkify.py --help
 usage: dorkify.py [-h]
-                  [--cli | -v | -s SEARCH | 
+                  [--cli | --wp | --up | --cam |
+                  --ftp |  -v | -s SEARCH | 
                   -b BOOK | -mu MUSIC | -m MAPS | 
-                  -w WEATHER | -i INFO | -d DEFINE | -
-                  st STOCKS | --intitle INTITLE | 
+                  -w WEATHER | -i INFO | -d DEFINE | 
+                  -st STOCKS | --intitle INTITLE | 
                   --inurl INURL | --site SITE]
 
 optional arguments:
   -h, --help            show this help message and exit
   --cli                 Run the Command Line version of Dorkify
+  --wp                  WordPress sites vulnerabilities
+  --up                  Find vulnerable Usernames and Passwords
+  --cam                 Find vulnerable CCTV cameras
+  --ftp                 Find open FTP Servers
   -v, --version         Version
   -s SEARCH, --search SEARCH
                         Do a Google search
@@ -88,6 +93,7 @@ optional arguments:
   --intitle INTITLE     Search for a keywords in website title
   --inurl INURL         Search for a keywords in website URL
   --site SITE           Search for a Site
+
 ```
 
 ### Run Dorkify
