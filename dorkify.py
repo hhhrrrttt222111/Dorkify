@@ -257,57 +257,46 @@ if args['cli']:
         print('INVALID OPTION! \n EXITING ')
         sys.exit()
 
-
+logo.dorkify_logo()
 if args['search'] is not None:
-    logo.dorkify_logo()
     search_url.url_search(args['search'])
 
 if args['book'] is not None:
-    logo.dorkify_logo()
     q = str('book:' + args['book'])
     search_url.url_search(q)
 
 if args['intitle'] is not None:
-    logo.dorkify_logo()
     q = str('intitle:' + args['intitle'])
     search_url.url_search(q)
 
 if args['inurl'] is not None:
-    logo.dorkify_logo()
     q = str('inurl:' + args['inurl'])
     search_url.url_search(q)
 
 if args['site'] is not None:
-    logo.dorkify_logo()
     q = str('site:' + args['site'])
     search_url.url_search(q)
 
 if args['music'] is not None:
-    logo.dorkify_logo()
     q = str('?intitle:index.of?mp3 ' + args['music'])
     search_url.url_search(q)
 
 if args['stocks'] is not None:
-    logo.dorkify_logo()
     q = str('stocks' + args['stocks'])
     search_url.url_search(q)
 
 if args['maps'] is not None:
-    logo.dorkify_logo()
     q = str('maps' + args['maps'])
     search_url.url_search(q)
 
 if args['weather'] is not None:
-    logo.dorkify_logo()
     q = str('weather' + args['weather'])
     search_url.url_search(q)
 
 if args['info'] is not None:
-    logo.dorkify_logo()
     q = str('info' + args['info'])
     search_url.url_search(q)
 
 if args['define'] is not None:
-    logo.dorkify_logo()
     q = str('define' + args['define'])
     search_url.url_search(q)
