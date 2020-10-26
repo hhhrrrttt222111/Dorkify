@@ -34,6 +34,11 @@ ap.add_argument('-st', '--stocks', type=str, help='Search for Stock of a company
 ap.add_argument('--intitle', type=str, help='Search for a keywords in website title')
 ap.add_argument('--inurl', type=str, help='Search for a keywords in website URL')
 ap.add_argument('--site', type=str, help='Search for a Site')
+
+if len(sys.argv) == 1:
+    parser.print_help()
+    sys.exit()
+
 args = vars(parser.parse_args())
 
 
