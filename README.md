@@ -54,14 +54,16 @@ git clone https://github.com/hhhrrrttt222111/Dorkify.git
 
 cd Dorkify
 
-python3 -m pip install -r requirements.txt
+chmod +x install.sh
+
+./install.sh
 ```
 
 ## USAGE
 
 ```bash
-python3 dorkify.py --help
-usage: dorkify.py [-h]
+dorkify --help
+usage: dorkify [-h]
                   [--cli | --wp | --up | --cam |
                   --ftp |  -v | -s SEARCH | 
                   -b BOOK | -mu MUSIC | -m MAPS | 
@@ -98,7 +100,7 @@ optional arguments:
 
 ### Run Dorkify
 ```bash
-python3 dorkify.py --cli
+dorkify --cli
 ```
 
 <br>
